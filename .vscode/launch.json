@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    
+      {
+        "name": "Flutter Debug (macOS)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "preLaunchTask": "Copy ffmpeg to Debug build",
+        "deviceId": "macos",
+        "args": [],
+        "cwd": "${workspaceFolder}"
+      },
+      {
+        "name": "Flutter Run (macOS Release-style)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",  // Close to release but with some debugging enabled
+        "deviceId": "macos",
+        "args": [],
+        "cwd": "${workspaceFolder}"
+      }
+    ]
+  }
+  
