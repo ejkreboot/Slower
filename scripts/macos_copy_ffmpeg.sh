@@ -24,10 +24,10 @@ fi
 
 # Only copy if destination missing or source is newer
 if [ ! -f "$FFMPEG_DEST" ] || [ "$FFMPEG_SOURCE" -nt "$FFMPEG_DEST" ]; then
-  echo -e "${YELLOW}📦 Copying ffmpeg into $RESOURCES_PATH...${NC}"
+  echo -e "${YELLOW}Copying ffmpeg into $RESOURCES_PATH...${NC}"
   cp "$FFMPEG_SOURCE" "$FFMPEG_DEST"
   chmod +x "$FFMPEG_DEST"
-  echo -e "${GREEN}✅ ffmpeg copied to Debug app bundle successfully!${NC}"
+  echo -e "${GREEN}ffmpeg copied to Debug app bundle successfully!${NC}"
 else
-  echo -e "${GREEN}✅ ffmpeg already up-to-date in Debug app bundle.${NC}"
+  echo -e "${GREEN}ffmpeg already up-to-date in Debug app bundle.${NC}"
 fi

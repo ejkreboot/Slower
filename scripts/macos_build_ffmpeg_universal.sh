@@ -111,3 +111,4 @@ fi
 cp "$FFMPEG_DIR/LICENSE.md" "$LICENSE_TARGET"
 
 echo "✅ Copied ffmpeg and LICENSE.md to Flutter app Resources."
+
