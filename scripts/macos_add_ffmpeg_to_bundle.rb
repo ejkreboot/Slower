@@ -46,7 +46,7 @@ else
 end
 
 # Add or verify a Run Script phase for chmod +x
-script_text = 'chmod +x "${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Runner/Resources/ffmpeg"'
+script_text = 'chmod +x "${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Resources/ffmpeg"'
 unless target.shell_script_build_phases.any? { |p| p.shell_script.include?(script_text) }
   puts "Adding Run Script Phase to make ffmpeg executable..."
   phase = target.new_shell_script_build_phase('Make ffmpeg Executable')

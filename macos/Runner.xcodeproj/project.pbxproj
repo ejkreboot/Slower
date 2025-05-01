@@ -400,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "chmod +x \"${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Runner/Resources/ffmpeg\"\n";
+			shellScript = "chmod +x \"${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/Resources/ffmpeg\"\n";
 		};
 		759F91A809A055CE4127F803 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

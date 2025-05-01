@@ -1,11 +1,11 @@
-# 🎶 Slower
+# Slower
 
 **Slower** is a desktop audio playback tool for musicians, language learners, and obsessive listeners who want to zoom in, loop, and slow down parts of an audio file with precision.
 
 Built using [Flutter](https://flutter.dev), Slower combines an intuitive waveform UI with loop control, playback speed adjustment, and persistent region saving.s
 
 Flutter is cross platform, and thus Slower is too. However, to date it has only been built on MacOS. Builds on Windows
-and Linux platforms coming soon. 
+and Linux platforms coming soon.
 
 ---
 
@@ -39,31 +39,12 @@ As binaries become available you will be able to downloae pre-build binaries.
 1. Install Flutter with macOS desktop support  
    [Flutter installation guide](https://docs.flutter.dev/get-started/install)
 
-2. Clone the repo:
+2. Clone the repo and build.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/slower.git
 cd slower
-./scripts/macos_build_ffmpeg_universal.sh
-./scripts/macos_copy_ffmpeg.sh
-```
-
-Next, the ffmpeg binary built by the previous steps needs to be manually added to the app bundle:
-
-1. Open the Xcode workspace:
-```
-   open macos/Runner.xcworkspace
-```
-2. In the Project Navigator (left sidebar), right-click Runner →
-➤ "Add Files to 'Runner'..."
-➤ Select your ffmpeg binary (./macos/Runner/Resources/ffmpeg)
-
-
-Then build the app:
-```bash
-
+./scripts/macos_configure.sh
 flutter build macos
-open build/macos/Build/Products/Release/Slower.app
-
+cp -R ./build/macos/Build/Products/Release/slower.app ~/Applications/
 ```
-
